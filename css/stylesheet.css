@@ -1,0 +1,69 @@
+
+body{
+    margin: 0 auto;
+    font-size: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* header */
+
+header{
+    background-color: rgb(57, 67, 80);
+}
+
+header h1{
+    font-size: 5em;
+    font-family: 'Verdana';
+    padding-left: 8%;
+    margin: 0;
+    color: rgb(128, 133, 169);
+}
+
+/* Estilos del nav */
+nav{
+    width: 100%;
+    background-color: #484646;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    font-size: 1.2em;
+    padding: 1%;
+    flex-grow: 1;
+}
+
+nav ul li a{
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1.4px;
+    width: 100%;
+}
+
+/* Estilos del main */
+
+main h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos del footer */
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #292a2c;
+    position: absolute;
+    bottom: 0;
+}
