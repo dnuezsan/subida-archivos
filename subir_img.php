@@ -13,11 +13,13 @@
 
 <body>
     <header>
-    <a href="inicio.php"><h1>El laboratorio</h1></a>
+        <a href="inicio.php">
+            <h1>El laboratorio</h1>
+        </a>
         <nav>
             <ul>
                 <li>
-                    <a href="subir_img.php">Subir imágenes</a>
+                    <a href="subir_img.php">Subir archivos</a>
                 </li>
                 <li>
                     <a href="ver_imagenes.php">Ver imágenes</a>
@@ -29,7 +31,14 @@
         </nav>
     </header>
     <main>
-    <h1>SUBIR IMAGEN</h1>
+        <h1>SUBIR IMAGEN</h1>
+
+        <form action="uploader.php" method="POST" enctype="multipart/form-data">
+            <label for="archivo">Sube tu archivo aquí </label>
+            <input type="file" name="archivo">
+            <input type="submit" value="subir">
+        </form>
+
     </main>
     <footer>
 

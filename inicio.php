@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="subir_img.php">Subir imágenes</a>
+                    <a href="subir_img.php">Subir archivos</a>
                 </li>
                 <li>
                     <a href="ver_imagenes.php">Ver imágenes</a>
