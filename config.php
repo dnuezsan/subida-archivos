@@ -1,7 +1,7 @@
 <?php
 
-define('SERVIDOR', 'root');
+define('SERVIDOR', 'localhost');
 define('USUARIO', 'dani');
-define('CONTRASENIA', '');
+define('CONTRASENIA', '12345');
 define('BD', 'dani_bd')
 ?>

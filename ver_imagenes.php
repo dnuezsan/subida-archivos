@@ -13,7 +13,9 @@
 
 <body>
     <header>
-    <a href="inicio.php"><h1>El laboratorio</h1></a>
+        <a href="inicio.php">
+            <h1>El laboratorio</h1>
+        </a>
         <nav>
             <ul>
                 <li>
@@ -31,11 +33,11 @@
     <main>
         <h1>GALERÍA DE IMÁGENES</h1>
         <?php
-
+        require 'metodo.php';
         $controlador = new Metodo();
 
         $controlador->galeriaImagenes();
-        
+
         ?>
     </main>
     <footer>

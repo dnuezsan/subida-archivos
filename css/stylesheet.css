@@ -58,6 +58,24 @@ main h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+table{
+    width: 100%;
+}
+
+table tr{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+}
+
+tr div{
+    width: 100%;
+}
+
+tr div img{
+    width: 100%;
+}
+
 /* Estilos del footer */
 
 footer{

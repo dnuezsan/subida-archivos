@@ -13,7 +13,9 @@
 
 <body>
     <header>
-    <a href="inicio.php"><h1>El laboratorio</h1></a>
+        <a href="inicio.php">
+            <h1>El laboratorio</h1>
+        </a>
         <nav>
             <ul>
                 <li>
@@ -29,7 +31,15 @@
         </nav>
     </header>
     <main>
-    <h1>NOMBRE DE IMÁGENES</h1>
+        <h1>NOMBRE DE IMÁGENES</h1>
+        <?php
+
+        require 'metodo.php';
+
+        $controlador = new Metodo();
+
+        $controlador->nombres();
+        ?>
     </main>
     <footer>
 
