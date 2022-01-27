@@ -36,16 +36,19 @@
         <form action="#" method="POST" enctype="multipart/form-data">
             <label for="archivo">Sube tu archivo aquí </label>
             <input type="file" name="archivo">
-            <input type="submit" value="subir">
+            <input type="submit" name="boton" value="subir">
         </form>
 
         <?php
         require 'metodo.php';
-        
+
         $controlador = new Metodo();
 
         //Metodo que gestiona la subida del archivo al directorio
-        $controlador->subida_archivo();
+        if (isset($_POST['boton'])) {
+            $controlador->subida_archivo();
+        }
+
         ?>
     </main>
     <footer>

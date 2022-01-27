@@ -68,6 +68,9 @@ class Metodo extends Conexion
         /* basename() devuelve el último nombre de una ruta */
         $archivo = 'img/' . basename($_FILES['archivo']['name']);
 
+        /* Cambia los espacios en blanco por guiones */
+        $arreglado = str_replace(' ', '_', $archivo);
+
         /* Obtener el tipo de archivo */
         $tipo_archivo = pathinfo($archivo, PATHINFO_EXTENSION);
 
@@ -77,7 +80,7 @@ class Metodo extends Conexion
             if ($tipo_archivo == 'jpg' || $tipo_archivo == 'pdf') {
 
                 /* Sube un archivo a un directorio */
-                if (move_uploaded_file($_FILES['archivo']['tmp_name'], $archivo)) {
+                if (move_uploaded_file($_FILES['archivo']['tmp_name'], $arreglado)) {
                     echo '<h3>Se ha guardado el archivo</h3>';
                 } else {
                     echo '<h3>Se produjo un error al subir el archivo</h3>';
