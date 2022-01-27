@@ -31,14 +31,22 @@
         </nav>
     </header>
     <main>
-        <h1>SUBIR IMAGEN</h1>
+        <h2>SUBIR IMAGEN</h2>
 
-        <form action="uploader.php" method="POST" enctype="multipart/form-data">
+        <form action="#" method="POST" enctype="multipart/form-data">
             <label for="archivo">Sube tu archivo aquí </label>
             <input type="file" name="archivo">
             <input type="submit" value="subir">
         </form>
 
+        <?php
+        require 'metodo.php';
+        
+        $controlador = new Metodo();
+
+        //Metodo que gestiona la subida del archivo al directorio
+        $controlador->subida_archivo();
+        ?>
     </main>
     <footer>
 

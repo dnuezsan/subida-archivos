@@ -31,16 +31,18 @@
         </nav>
     </header>
     <main>
-        <h1>GALERÍA DE IMÁGENES</h1>
+        <h2>GALERÍA DE IMÁGENES</h2>
         <?php
         require 'metodo.php';
+
         $controlador = new Metodo();
 
+        /* Metodo que genera la galería de imágenes */
         $controlador->galeriaImagenes();
 
         ?>
     </main>
-    <footer>
+    <footer id="footerGaleria">
 
     </footer>
 </body>

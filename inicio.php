@@ -29,7 +29,8 @@
         </nav>
     </header>
     <main>
-    <h1>INICIO</h1>
+    <h2 id="titularInicio">En este espacio podrás subir y ver imágenes jpg</h2>
+    <h3>También puedes subir pdf pero no lo verás...</h3>
     </main>
     <footer>
 

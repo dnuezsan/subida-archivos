@@ -54,8 +54,27 @@ nav ul li a{
 
 /* Estilos del main */
 
-main h1{
+main h2{
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    font-size: 2em;
+}
+
+#titularInicio{
+    text-align: center;
+}
+
+main h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+label{
+    font-size: 2em;
 }
 
 table{
@@ -76,6 +95,10 @@ tr div img{
     width: 100%;
 }
 
+td span{
+    font-size: 1.5em;
+}
+
 /* Estilos del footer */
 
 footer{
@@ -84,4 +107,8 @@ footer{
     background-color: #292a2c;
     position: absolute;
     bottom: 0;
+}
+
+#footerGaleria{
+    position: relative;
 }

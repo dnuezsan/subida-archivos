@@ -31,13 +31,14 @@
         </nav>
     </header>
     <main>
-        <h1>NOMBRE DE IMÁGENES</h1>
+        <h2>NOMBRE DE IMÁGENES</h2>
         <?php
 
         require 'metodo.php';
 
         $controlador = new Metodo();
 
+        /* Extrae y muestra los nombres de las imágenes del directorio */
         $controlador->nombres();
         ?>
     </main>
